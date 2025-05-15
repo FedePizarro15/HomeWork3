@@ -9,3 +9,6 @@
 # Ignorar objetos intermedios
 *.o
 src/*.o
+
+# Ignorar carpeta VSCode
+/.vscode/

@@ -1,4 +1,4 @@
-#include "../include/BaseMedition.h"
+#include "BaseMedition.h"
 
 BaseMedition::BaseMedition(float _meditionTime) {
     meditionTime = make_unique<float>(_meditionTime);

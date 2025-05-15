@@ -1,6 +1,6 @@
-#include "../include/Position.h"
-#include "../include/Pressure.h"
-#include "../include/SaveFlightData.h"
+#include "Position.h"
+#include "Pressure.h"
+#include "SaveFlightData.h"
 
 int main() {
     Position position(-34.6f, -58.4f, 950.0f, 5.3f);

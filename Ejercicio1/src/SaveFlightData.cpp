@@ -1,4 +1,4 @@
-#include "../include/SaveFlightData.h"
+#include "SaveFlightData.h"
 
 #include <iostream>
 void SaveFlightData::serialize(ofstream& out) const {
