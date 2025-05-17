@@ -10,12 +10,8 @@ class Position : public BaseMedition {
         float longitude;
         float altitude;
 
-        Position(float _meditionTime, float _latitude, float _longitude, float _altitude) :
-            BaseMedition(_meditionTime), 
-            latitude(_latitude),
-            longitude(_longitude),
-            altitude(_altitude) {};
-        
+        Position();
+        Position(float _meditionTime, float _latitude, float _longitude, float _altitude);
         ~Position() = default;
 
         void serialize(ofstream& out) const override;

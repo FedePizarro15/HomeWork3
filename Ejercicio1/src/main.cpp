@@ -1,6 +1,6 @@
-#include "Position.h"
-#include "Pressure.h"
-#include "SaveFlightData.h"
+#include "../include/Position.h"
+#include "../include/Pressure.h"
+#include "../include/SaveFlightData.h"
 
 int main() {
     Position position(-34.6f, -58.4f, 950.0f, 5.3f);
@@ -16,8 +16,9 @@ int main() {
         outFile.close();
     }
 
-    Position deserializedPosition(0.0f, 0.0f, 0.0f, 0.0f);
-    Pressure deserializedPressure(0.0f, 0.0f, 0.0f);
+    Position deserializedPosition;
+    Pressure deserializedPressure;
+    
     SaveFlightData deserializedSaveFlightData(deserializedPosition, deserializedPressure);
 
     ifstream inFile("data/flight_data.bin", ios::binary);

@@ -8,6 +8,7 @@ using namespace std;
 
 class BaseMedition : public IMeditions {
     public:
+        BaseMedition();
         BaseMedition(float _meditionTime);
         ~BaseMedition() = default;
 

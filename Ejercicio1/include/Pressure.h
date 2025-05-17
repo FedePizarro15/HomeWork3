@@ -9,11 +9,8 @@ class Pressure : public BaseMedition {
         float staticPressure;
         float dinamicPressure;
 
-        Pressure(float _meditionTime, float _staticPressure, float _dinamicPressure) :
-            BaseMedition(_meditionTime),
-            staticPressure(_staticPressure),
-            dinamicPressure(_dinamicPressure) {};
-        
+        Pressure();
+        Pressure(float _meditionTime, float _staticPressure, float _dinamicPressure);        
         ~Pressure() = default;
 
         void serialize(ofstream& out) const override;

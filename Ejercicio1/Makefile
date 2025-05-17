@@ -1,8 +1,9 @@
 all:
 	mkdir -p bin data
-	g++ -std=c++17 -Wall src/*.cpp -Iinclude -o bin/flight_app
+	g++ -std=c++17 -Wall src/*.cpp -o bin/flight_app
 
 run: all
+	clear
 	./bin/flight_app
 
 clean:

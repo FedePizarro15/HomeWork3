@@ -1,6 +1,16 @@
-#include "Position.h"
+#include "../include/Position.h"
 
 #include <iostream>
+
+//?? Por que no me permite hacer de forma implicita meditionTime
+
+Position::Position() : latitude(0.0f), longitude(0.0f), altitude(0.0f) {
+    meditionTime = make_unique<float>(0.0f);
+}
+
+Position::Position(float _meditionTime, float _latitude, float _longitude, float _altitude) : latitude(_latitude), longitude(_longitude), altitude(_altitude) {
+    meditionTime = make_unique<float>(_meditionTime);
+}
 
 void Position::serialize(ofstream& out) const {
     BaseMedition::serialize(out);

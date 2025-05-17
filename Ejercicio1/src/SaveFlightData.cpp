@@ -1,6 +1,7 @@
-#include "SaveFlightData.h"
+#include "../include/SaveFlightData.h"
 
 #include <iostream>
+
 void SaveFlightData::serialize(ofstream& out) const {
     position.serialize(out);
     pressure.serialize(out);
@@ -9,7 +10,6 @@ void SaveFlightData::serialize(ofstream& out) const {
 void SaveFlightData::deserialize(ifstream& in) {
     position.deserialize(in);
     pressure.deserialize(in);
-
 }
 
 void SaveFlightData::print() {
