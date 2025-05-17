@@ -1,0 +1,7 @@
+# Ignorar ejecutable y carpeta de binarios
+/bin/
+/bin/*
+
+# Ignorar objetos intermedios
+*.o
+src/*.o
