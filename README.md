@@ -26,6 +26,8 @@ cd Ejercicio1
 
 *borra bin/ y data/\*.bin*
 
+---
+
 ### Ejercicio 2:
 
 cd Ejercicio2
@@ -42,9 +44,11 @@ cd Ejercicio2
 
 *borra bin/*
 
+---
+
 ### Ejercicio 3:
 
-cd Ejercicio1
+cd Ejercicio3
 
 **make**
 
