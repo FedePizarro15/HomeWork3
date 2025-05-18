@@ -10,9 +10,7 @@
 template<typename T>
 class FigureProcessor {
     public:
-        void calculateArea(T& object) {
-            cout << "No se puede calcular este área." << endl;
-        }
+        float calculateArea(const T& object) const {return 0.0f;}
 };
 
 template<> class FigureProcessor<Rectangle> {

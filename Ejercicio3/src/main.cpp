@@ -2,6 +2,8 @@
 #include "../include/JSONContainer.h"
 
 #include <iostream>
+#include <fstream>
+#include <string>
 
 int main() {
     JSONContainer<double> doubles;
@@ -24,6 +26,17 @@ int main() {
     builder.addData("palabras", strings);
     builder.addData("listas", intVectors);
 
-    cout << builder.printJSON();
+    cout << builder.printJSON() << endl;
+    
+    ofstream jsonFile("data/output.json");
+    
+    if (jsonFile.is_open()) {
+        jsonFile << builder.printJSON();
+        jsonFile.close();
+    } else {
+        cerr << "Error: No se pudo abrir el archivo para escritura" << endl;
+        return 1;
+    }
+    
     return 0;
 }

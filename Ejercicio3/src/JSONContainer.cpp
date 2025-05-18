@@ -1,4 +1,7 @@
 #include "../include/JSONContainer.h"
+
+#include <string>
+#include <type_traits>
 #include <sstream>
 #include <iomanip>
 

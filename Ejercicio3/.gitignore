@@ -2,6 +2,10 @@
 /bin/
 /bin/*
 
+# Ignorar datos serializados binarios
+/data/
+/data/*
+
 # Ignorar objetos intermedios
 *.o
 src/*.o
