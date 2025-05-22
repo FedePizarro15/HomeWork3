@@ -1,6 +1,6 @@
 all:
 	mkdir -p bin data
-	g++ -std=c++17 -Wall src/*.cpp -o bin/json_creator
+	g++ -std=c++17 -Wall src/*.cpp examples/main.cpp -o bin/json_creator
 
 run: all
 	clear
